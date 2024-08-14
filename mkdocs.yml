@@ -1,0 +1,81 @@
+site_name: TradeNetHub Documentation
+site_url: https://facumoyano.github.io/tradenethub-docs/
+nav: 
+  - Home: index.md
+  - User Guide:
+    - Overview: user-guide/overview.md
+    - Dashboard: user-guide/dashboard.md
+    - Operational Calendar: user-guide/operational-calendar.md
+    - Cargos Management: user-guide/cargos-management.md
+    - Resource Management: user-guide/resources-management.md
+    - Expense and Sales Control: user-guide/expense-and-sales-control.md
+    - Alerts and Reminders: user-guide/alerts-and-reminders.md
+    - Contract Creation:
+      - Trade:
+        - Mother Contract: user-guide/contract-creation/trade/mother-contract.md
+        - Child Contract: user-guide/contract-creation/trade/child-contract.md
+      - Brokerage: user-guide/contract-creation/brokerage.md
+  - Developer Guide: developer-guide.md
+  - What's New: whats-new.md
+  - Help and Support: help-and-support.md
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  logo: assets/logo-tnh.svg
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: indigo
+      accent: white
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+      primary: indigo
+      accent: white
+
+  plugins:
+    - social
+    - search
+  
+  extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/james-willett
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/TheJamesWillett
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/willettjames/
+
+  markdown_extensions:
+    - pymdownx.highlight:
+        anchor_linenums: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - admonition
+    - pymdownx.arithmatex:
+        generic: true
+    - footnotes
+    - pymdownx.details
+    - pymdownx.superfences
+    - pymdownx.mark
+    - attr_list
+    - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+
+  copyright: |
+    &copy; 2023 <a href="https://github.com/james-willett"  target="_blank" rel="noopener">James Willett</a>
+
